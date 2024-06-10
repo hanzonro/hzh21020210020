@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.esxy.mapper.PaymentMapper">
+
+    <select id="selectPaymentAll" resultType="com.esxy.pojo.Payment">
+        select * from payment where 1=1
+        <if test="id !=null and id!=''">
+            and id=#{id}
+        </if>
+    </select>
+
+    <insert id="addPayment">
+        insert into payment (id,serial) values (#{id},#{serial})
+    </insert>
+</mapper>
