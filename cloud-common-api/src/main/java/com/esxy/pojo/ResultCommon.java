@@ -13,9 +13,9 @@ public class ResultCommon<T> {
         this.msg = msg;
     }
 
-    private Integer code;
+    private Integer code;//状态码
 
-    private String msg;
+    private String msg;//提示详细
 
-    private T data;
+    private T data;//返回的数据
 }

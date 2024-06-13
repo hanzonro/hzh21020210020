@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication//标记此时此刻当前类为启动类
-@MapperScan("com.esxy.mapper")
-//@EnableEurekaClient
+@EnableEurekaClient
 public class Payment8001 {
     public static void main(String[] args) {
 

@@ -7,11 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="han-eureka-02" />
+        <module name="han-eureka-01" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-provider-payment8001" />
         <module name="haneureka02" />
         <module name="haneureka01" />
         <module name="cloud-common-api" />
+        <module name="cloud-hanzonro-order" />
         <module name="cloudhanzonroorder" />
       </profile>
     </annotationProcessing>
