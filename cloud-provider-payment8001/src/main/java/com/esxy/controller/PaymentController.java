@@ -17,7 +17,7 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
     //查
-    @GetMapping("/selectPaymentAll/{id}")
+    @RequestMapping("/selectPaymentAll/{id}")
     public ResultCommon selectPaymentAll(@PathVariable("id") Long id) {
         List<Payment> payments = paymentService.selectPaymentAll(id);
         System.out.println("使用8001");

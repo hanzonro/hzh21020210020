@@ -1,10 +1,8 @@
 server:
   port: 7001
-
 spring:
   application:
     name: eureka_7001.com
-
 eureka:
   instance:
     #    hostname: localhost #eureka服务端的实例名称，一个ip对应多个域名，在这里，域名就是实例(自己在hosts取得名字)
@@ -15,8 +13,7 @@ eureka:
     fetch-registry: false     #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
       #设置与eureka Service交互的地址查询服务和注册服务都需要依赖这个地址
+      #集群版
+      defaultZone: http://eureka7002.com:7002/eureka/
       #单机版
 #            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      #集群版
-
-      defaultZone: http://eureka7002.com:7002/eureka/

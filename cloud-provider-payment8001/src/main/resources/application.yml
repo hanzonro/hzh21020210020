@@ -2,8 +2,6 @@
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
-
 eureka:
   instance:
     #    给注册到eureka中的URL起一个别名
@@ -20,7 +18,7 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
     fetchRegistry: true
     serviceUrl:
-      #单机版
-      #      defaultZone: http://localhost:7001/eureka
       #集群
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
+      #单机版
+      #      defaultZone: http://localhost:7001/eureka
